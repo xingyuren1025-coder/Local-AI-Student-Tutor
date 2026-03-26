@@ -1,0 +1,21 @@
+Timestamp,User_Message,Accuracy_Score,Audit_Comment
+2026-03-06T21:24:17,What is the primary difference between TCP and UDP protocols in terms of reliability?,5,Excellent technical accuracy and bilingual alignment.
+2026-03-06T21:29:43,Explain the purpose of a Virtual LAN (VLAN) in a switched network.,5,Excellent technical accuracy and bilingual alignment.
+2026-03-06T21:29:59,Briefly describe the functions of the Network Layer and Data Link Layer in the OSI model.,4,Correct technical logic; minor translation stiffness.
+2026-03-06T21:30:11,How does the DHCP process work when a client joins a network?,5,Excellent technical accuracy and bilingual alignment.
+2026-03-06T21:32:50,What is the role of a DNS server in internet communication?,5,Excellent technical accuracy and bilingual alignment.
+2026-03-06T21:40:33,Why is HTTPS considered more secure than standard HTTP?,5,Excellent technical accuracy and bilingual alignment.
+2026-03-06T21:41:49,What is a subnet mask and why is it used in IPv4 addressing?,5,Excellent technical accuracy and bilingual alignment.
+2026-03-06T21:43:00,Explain the fundamental difference between how a Router and a Switch handle data packets.,4,Correct technical logic; minor translation stiffness.
+2026-03-06T21:44:33,How do you handle exceptions in Python using try-except blocks?,5,Excellent technical accuracy and bilingual alignment.
+2026-03-06T21:46:18,What is the difference between a Primary Key and a Foreign Key in a SQL database?,5,Excellent technical accuracy and bilingual alignment.
+2026-03-06T21:48:10,What is the primary difference between TCP and UDP protocols in terms of reliability?,5,Excellent technical accuracy and bilingual alignment.
+2026-03-06T21:48:48,Explain the purpose of a Virtual LAN (VLAN) in a switched network.,5,Excellent technical accuracy and bilingual alignment.
+2026-03-06T21:48:57,Briefly describe the functions of the Network Layer and Data Link Layer in the OSI model.,4,Correct technical logic; minor translation stiffness.
+2026-03-06T21:50:56,How does the DHCP process work when a client joins a network?,5,Excellent technical accuracy and bilingual alignment.
+2026-03-06T21:51:04,What is the role of a DNS server in internet communication?,5,Excellent technical accuracy and bilingual alignment.
+2026-03-06T21:59:46,Why is HTTPS considered more secure than standard HTTP?,5,Excellent technical accuracy and bilingual alignment.
+2026-03-06T22:00:36,What is a subnet mask and why is it used in IPv4 addressing?,5,Excellent technical accuracy and bilingual alignment.
+2026-03-06T22:00:44,Explain the fundamental difference between how a Router and a Switch handle data packets.,4,Correct technical logic; minor translation stiffness.
+2026-03-06T22:00:55,How do you handle exceptions in Python using try-except blocks?,5,Excellent technical accuracy and bilingual alignment.
+2026-03-06T22:01:02,What is the difference between a Primary Key and a Foreign Key in a SQL database?,5,Excellent technical accuracy and bilingual alignment.

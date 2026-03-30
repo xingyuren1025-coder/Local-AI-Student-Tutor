@@ -11,7 +11,7 @@ def admin_login():
             st.subheader("🔑 Admin Access")
             pwd = st.text_input("Enter Password", type="password")
             if st.button("Login"):
-                if pwd == "admin123":  # 默认密码
+                if pwd == "admin123":  # Default password 默认密码
                     st.session_state.authenticated = True
                     st.rerun()
                 else:

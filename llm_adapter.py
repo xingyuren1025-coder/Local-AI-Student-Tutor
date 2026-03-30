@@ -27,14 +27,17 @@ def get_resource_usage():
 
 def run_inference(user_input, system_instruction, messages, model, tokenizer):
     # 开始监控资源与时间
+    # Start monitoring resources and time
     start_mem, _ = get_resource_usage()
     start_time = time.perf_counter()
 
-    # --- 步骤 1: 英文推理 ---
+    # 步骤 1: 英文推理
+    # Step 1: English Reasoning
     strict_english_prompt = f"Answer the following question in ENGLISH ONLY. Question: {user_input}"
     qwen_messages = [{"role": "system", "content": system_instruction}]
 
     # 保持对话上下文
+    # Maintain conversation context
     for msg in messages[-4:]:
         qwen_messages.append({"role": msg["role"], "content": msg["content"]})
     qwen_messages.append({"role": "user", "content": strict_english_prompt})
@@ -52,7 +55,9 @@ def run_inference(user_input, system_instruction, messages, model, tokenizer):
 
     eng_res = tokenizer.decode(generated_ids[0][len(model_inputs.input_ids[0]):], skip_special_tokens=True).strip()
 
-    # --- 步骤 2: 中文翻译 ---
+    # 步骤 2: 中文翻译
+    # Step 2: Chinese Translation
+
     translate_prompt = [
         {"role": "system", "content": "You are a professional Chinese translator."},
         {"role": "user", "content": f"Translate this into Chinese: {eng_res}"}
@@ -65,12 +70,13 @@ def run_inference(user_input, system_instruction, messages, model, tokenizer):
 
     chn_res = tokenizer.decode(trans_gen_ids[0][len(trans_inputs.input_ids[0]):], skip_special_tokens=True).strip()
 
-    # --- 结束监控 ---
-    # 修复点：定义 end_time 并获取最终资源数据
+    # 结束监控
+    # End Monitoring
     end_time = time.perf_counter()
     end_mem, cpu_perc = get_resource_usage()
 
     # 计算最终性能指标
+    # Calculate the final performance metrics
     latency = round(end_time - start_time, 2)
     mem_used = round(end_mem, 2)
 
